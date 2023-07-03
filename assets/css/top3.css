@@ -1,0 +1,23 @@
+.top3-content {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: auto;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.top3-content .top3-personagem {
+    text-align: left;
+    color: black;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+
+#top3 {
+    padding-top: 100px; /* Ajuste o valor conforme necessário para corresponder à altura do menu */
+  }

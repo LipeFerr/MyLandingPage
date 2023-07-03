@@ -1,0 +1,25 @@
+.intro-content{
+    position: relative;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content p {
+    font-size: 2.1rem;
+}
+
+.intro-img img{
+    max-width: 70%;
+    margin-left: 20%;
+    height: auto;
+    z-index: 1;
+}
