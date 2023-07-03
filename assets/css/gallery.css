@@ -1,0 +1,38 @@
+.gallery-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.gallery-main-heading{
+    margin-bottom: 1rem;
+}
+
+.gallery-description {
+    padding-bottom: 5rem;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counnter;
+}
+
+.gallery-content h2 {
+    font-size: 6rem;
+}
+
+.gallery-content p {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}

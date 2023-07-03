@@ -1,0 +1,55 @@
+.tecOp-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.tecOne-main-heading{
+    margin-bottom: 1rem;
+}
+
+.tecOne-description {
+    padding-bottom: 5rem;
+}
+
+
+.tecOp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counnter;
+}
+
+.tecOp-content h2 {
+    font-size: 6rem;
+}
+
+.tecOp-content p {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.tecOp-grid article p {
+    font-size: 1.6rem;
+}
+
+.tecOp-grid article h3 {
+    font-size: 2.5rem; 
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.tecOp-grid article h3::before {
+    counter-increment: grid-counnter;
+    content: counter(grid-counnter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top:-4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
+
+
