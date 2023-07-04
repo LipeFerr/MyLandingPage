@@ -1,0 +1,49 @@
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+    margin-left: 20%;
+    padding-bottom: 15rem;
+}
+
+table {
+    min-width: 750px;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    padding: 0.5rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+    background: rgba(255, 255, 255, 0.048);
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+    background: rgba(255, 255, 255, 0.082);
+}
+
+.td-img {
+    text-align: center;
+}
+
+table th {
+    background-color: rgba(255, 255, 255, 0.301);
+}
+
+.viloes h2 {
+    font-size: 4rem;
+}
+.viloes p {
+    font-size: 2rem;
+}

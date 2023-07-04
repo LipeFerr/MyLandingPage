@@ -7,6 +7,7 @@
 
 .gallery-main-heading{
     margin-bottom: 1rem;
+    margin-top: 9rem;
 }
 
 .gallery-description {
@@ -35,4 +36,12 @@
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
