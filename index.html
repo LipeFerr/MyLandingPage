@@ -220,26 +220,73 @@
             <p class="midias-main-heading">Redes Sociais</p>
             <div class="social-grid">
                 <div class="social-img">
-                    <a href="https://www.linkedin.com/in/felipe-alves-engcomp/" target="_blank" rel="nofollow">
+                    <!-- <a href="https://www.linkedin.com/in/felipe-alves-engcomp/" target="_blank" rel="nofollow">
+                        <img src="./assets/img/midias/linkedin.png" alt="">
+                    </a> -->
+                    <a href="javascript:void(0);" onclick="openLinkedInApp();" rel="nofollow">
                         <img src="./assets/img/midias/linkedin.png" alt="">
                     </a>
 
                 </div>
                 <div class="social-img">
-                    <a href="https://github.com/LipeFerr" target="_blank" rel="nofollow">
+                    <!-- <a href="https://github.com/LipeFerr" target="_blank" rel="nofollow">
+                        <img src="./assets/img/midias/github.png" alt="">
+                    </a> -->
+                    <a href="javascript:void(0);" onclick="openGitHubApp();" rel="nofollow">
                         <img src="./assets/img/midias/github.png" alt="">
                     </a>
                 </div>
                 <div class="social-img">
-                    <a href="https://www.instagram.com/liipe.alves/" target="_blank" rel="nofollow">
+                    <!-- <a href="https://www.instagram.com/liipe.alves/" target="_blank" rel="nofollow">
+                        <img src="./assets/img/midias/instagram.png" alt="">
+                    </a> -->
+                    <a href="javascript:void(0);" onclick="openInstagramApp();" rel="nofollow">
                         <img src="./assets/img/midias/instagram.png" alt="">
                     </a>
-                    
                 </div>
             </div>
         </div>
     </section>
 
 </body>
+
+<script>
+    function openLinkedInApp() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Verificar se o usuário está em um dispositivo móvel
+        if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
+            window.location.href = 'linkedin://profile/felipe-alves-engcomp/';
+        } else {
+            // Se não for um dispositivo móvel, redirecionar para o site do LinkedIn
+            window.open('https://www.linkedin.com/in/felipe-alves-engcomp/', '_blank', 'noopener');
+        }
+    }
+
+    function openGitHubApp() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Verificar se o usuário está em um dispositivo móvel
+        if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
+            window.location.href = 'github://user?username=LipeFerr';
+        } else {
+            // Se não for um dispositivo móvel, redirecionar para o site do GitHub
+            window.open('https://github.com/LipeFerr', '_blank', 'noopener');
+        }
+    }
+
+    function openInstagramApp() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Verificar se o usuário está em um dispositivo móvel
+        if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
+            window.location.href = 'instagram://user?username=liipe.alves';
+        } else {
+            // Se não for um dispositivo móvel, redirecionar para o site do Instagram
+            window.open('https://www.instagram.com/liipe.alves', '_blank', 'noopener');
+        }
+    }
+
+</script>
 
 </html>
