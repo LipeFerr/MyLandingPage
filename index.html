@@ -20,24 +20,29 @@
     <link rel="stylesheet" href="./assets/css/tecOp.css">
     <link rel="stylesheet" href="./assets/css/gallery.css">
     <link rel="stylesheet" href="./assets/css/viloes.css">
+    <link rel="stylesheet" href="./assets/css/social.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
 </head>
 
 <body class="main-bg">
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false">
                 <a href="#intro">
                     <img class="img-icon-gojo" src="./assets/img/gojo.png" alt="gojo icone">
                 </a>
             </h1>
 
             <nav>
-                <ul>
-                    <li><a href="#intro">intro</a></li>
-                    <li><a href="#top3">top 3</a></li>
-                    <li><a href="#tecOp">técnicas op.</a></li>
+                <ul onclick="getElementById('close-menu').checked = false">
+                    <li><a href="#intro">home</a></li>
+                    <li><a href="#top3">top</a></li>
+                    <li><a href="#tecOp">técnicas</a></li>
                     <li><a href="#gallery">galeria</a></li>
-                    <li><a href="#viloes">Viloes</a></li>
+                    <li><a href="#viloes">vilões</a></li>
+                    <li><a href="#midias">contatos</a></li>
                 </ul>
             </nav>
         </div>
@@ -207,6 +212,31 @@
                 </tbody>
 
             </table>
+        </div>
+    </section>
+
+    <section id="midias" class="section white-bg">
+        <div class="main-content midias-content">
+            <p class="midias-main-heading">Redes Sociais</p>
+            <div class="social-grid">
+                <div class="social-img">
+                    <a href="https://www.linkedin.com/in/felipe-alves-engcomp/" target="_blank" rel="nofollow">
+                        <img src="./assets/img/midias/linkedin.png" alt="">
+                    </a>
+
+                </div>
+                <div class="social-img">
+                    <a href="https://github.com/LipeFerr" target="_blank" rel="nofollow">
+                        <img src="./assets/img/midias/github.png" alt="">
+                    </a>
+                </div>
+                <div class="social-img">
+                    <a href="https://www.instagram.com/liipe.alves/" target="_blank" rel="nofollow">
+                        <img src="./assets/img/midias/instagram.png" alt="">
+                    </a>
+                    
+                </div>
+            </div>
         </div>
     </section>
 

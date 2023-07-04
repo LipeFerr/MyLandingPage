@@ -2,11 +2,12 @@
     overflow: hidden;
     overflow-x: auto;
     margin-left: 20%;
-    padding-bottom: 15rem;
+    margin-right: 20%;
+    margin-bottom: 15rem;
 }
 
 table {
-    min-width: 750px;
+    min-width: 700px;
     width: 80%;
     border-collapse: collapse;
 }

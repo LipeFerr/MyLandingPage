@@ -1,0 +1,119 @@
+@media (max-width: 800px) {
+
+    .intro-content,
+    .gallery-grid,
+    .tecOp-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-content {
+        display: block;
+    }
+
+    .top3-content h2 {
+        font-size: 3.5rem;
+        word-wrap: break-word;
+    }
+
+    .intro-content h2 {
+        font-size: 3.5rem;
+        word-wrap: break-word;
+    }
+
+    .img-icon-gojo {
+        width: 8rem;
+        position: relative;
+    }
+
+    .intro-img {
+        align-items: center;
+        height: 30rem;
+        width: 30rem;
+        max-width: 36rem;
+        max-height: 36rem;
+    }
+
+    .intro-img img {
+        width: 36rem;
+        height: auto;
+    }
+
+    .intro-content,
+    .tecOp-content {
+        padding-top: 20rem;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content,
+    .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu ul li a{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+    }
+
+    .close-menu label {
+        z-index: 99;
+    }
+
+    .close-menu-label::after {  
+        content: '☰';
+        position: fixed;
+        z-index: 100;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 2.5rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    
+    .close-menu:checked~.menu {
+        display: block;
+    }
+    /* × */
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+        font-size: 4rem;
+    }
+
+    .menu-spacing {
+        display: none;
+    }
+
+}

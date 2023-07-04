@@ -1,0 +1,27 @@
+ 
+ .midias-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 5vh;
+    padding: 1rem;
+}
+
+.social-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 4rem);
+    gap: var(--gap);
+}
+
+.midias-main-heading {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.social-img img {
+    width: 40px
+}
+
+#midias{
+    min-height: 5vh;
+} 
