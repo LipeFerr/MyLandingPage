@@ -60,7 +60,7 @@
         justify-content: center;
     }
 
-    .menu ul li a{
+    .menu ul li a {
         text-align: center;
         justify-content: center;
     }
@@ -84,7 +84,7 @@
         z-index: 99;
     }
 
-    .close-menu-label::after {  
+    .close-menu-label::after {
         content: '☰';
         position: fixed;
         z-index: 100;
@@ -102,10 +102,11 @@
         border-radius: 8px;
     }
 
-    
+
     .close-menu:checked~.menu {
         display: block;
     }
+
     /* × */
     .close-menu:checked~.close-menu-label::after {
         content: '×';
@@ -116,4 +117,17 @@
         display: none;
     }
 
+    .responsive-table {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .intro-img img{
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: auto;
+        z-index: 1;
+    }
+    
 }
